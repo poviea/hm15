@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>hm15</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      .Header {
+        border: 2px solid red;
+        line-height: 1px;
+        height: 100px;
+        font-size: 45px;
+        width: 2284px;
+        background-color: beige;
+      }
+      .Nav {
+        border: 2px solid blue;
+        height: 110px;
+      }
+      .section {
+        border: 2px solid green;
+        height: 800px;
+        line-height: 300px;
+      }
+      .Footer {
+        border: 2px solid black;
+        height: 55px;
+        line-height: 55px;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0px;
+        font-size: 30px;
+      }
+      #menubar {
+        background: olive;
+      }
+      #menubar ul {
+        /* 여백과 패딩 모두 0 */
+        margin: 0px;
+        width: 2284px;
+        padding: 35px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+      }
+      #menubar ul li {
+        display: inline; /* 새 줄로 넘어가지 않게 */
+        list-style-type: none; /* 마커 삭제 */
+        padding: 0px 15px; /* top=bottom=0, left=right=15px */
+      }
+      #menubar ul li a {
+        color: white;
+        text-decoration: none; /* 링크 보이지 않게 */
+      }
+      #menubar ul li a:hover {
+        color: violet; /* 마우스 올라 갈 때 색 */
+      }
+      div > p {
+        display: inline-block; /* div의 자식 p */
+        position: absolute; /* 절대 배치 */
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        z-index: 10;
+        background: brown;
+      }
+      div#장식1{transform: rotate(20deg);}
+    #배경{
+        position: fixed;
+        z-index: -2;
+        left: 5px;
+        top: 300px;
+      }
+    #트리{
+        position: fixed;
+        z-index: -1;
+        left: 950px;
+        top: 300px;
+      }
+      #장식1 {
+        position: fixed;
+        z-index: 6;
+        left: 1150px;
+        top: 430px;
+      }
+      #장식2 {
+        position: fixed;
+        z-index: 4;
+        left: 1070px;
+        top: 680px;
+      }
+      #장식3 {
+        position: fixed;
+        z-index: 5;
+        left: 1100px;
+        top: 550px;
+      }
+      #장식4 {
+        position: fixed;
+        z-index: 6;
+        left: 1200px;
+        top: 550px;
+      }
+      #장식5 {
+        position: fixed;
+        z-index: 6;
+        left: 1220px;
+        top: 680px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Header">
+      <h3>김민욱의 홈페이지에 온 것을 <em style="font-size: 60px; color: blue;">환영</em>합니다.</h3>
+    </div>
+    <div class="Nav">
+        <nav id="menubar">
+            <ul>
+                <li>
+                  <a href="나는누구.html" target="_self">hm15 : 나는 누구인가?</a>
+                </li>
+                <li>
+                  <a href="나의하루.html" target="_self">나의 하루</a>
+                </li>
+                <li>
+                  <a href="3.html" target="_self">My favorite things</a>
+                </li>
+                <li>
+                  <a href="동호회.html" target="_self">동호회 모집</a>
+                </li>
+    </div>
+    <div class="section">
+      <img
+      id="배경"
+      src="media/christmas.jpg"
+      width="800px"
+      height="700px"
+      style="left: 800px; top: 270px;"
+      alt="크리스마스 트리"
+    />
+    <img
+      id="트리"
+      src="media/christmastree.png"
+      width="480"
+      height="600"
+      alt="크리스마스 풍경"
+    />
+    <img id="장식1" src="media/장식1.PNG" width="80" height="80" alt="장식1" />
+    <img id="장식2" src="media/장식2.PNG" width="80" height="80" alt="장식2" />
+    <img id="장식3" src="media/장식3.PNG" width="80" height="80" alt="장식3" />
+    <img id="장식4" src="media/장식4.PNG" width="80" height="80" alt="장식4" />
+    <img id="장식5" src="media/장식5.PNG" width="80" height="80" alt="장식4" />
+  </div>
+    </div>
+    <div class="Footer" style="float: left;">
+      <audio src="media/Mariah Carey - All I Want For Christmas Is You.m4a" controls autoplay loop></audio>
+    </div>
+  </body>
+</html>

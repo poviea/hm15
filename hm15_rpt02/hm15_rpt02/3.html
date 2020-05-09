@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm15 : My favorite things</title>
+    <style>
+      .제목 {
+        line-height: 1px;
+        height: 40px;
+        font-size: 40px;
+        width: 2284px;
+      }
+      .종류 {
+        font-size: 25px;
+      }
+      ul {
+        background: skyblue;
+        padding: 10px 10px 10px 50px;
+      }
+      ul li {
+        background: beige;
+        margin-bottom: 5px;
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <div class="제목">
+      <h3>hm15 : 내가 좋아하는 장르들 중 3가지씩</h3>
+    </div>
+    <hr />
+    <form>
+        <ul>
+            <li>
+      <div class="종류">
+        여행가고싶은 나라 : <input type="text" list="countries" /><br />
+        <datalist id="countries">
+          <option value="모스크바"> </option>
+          <option value="삿포로"> </option>
+          <option value="싱가폴"> </option>
+        </datalist>
+    </li>
+
+<li>
+    <div class="종류">
+        가수 : <input type="text" list="what" /><br />
+        <datalist id="what">
+          <option value="임재현"> </option>
+          <option value="창모"> </option>
+          <option value="악동뮤지션"> </option>
+        </datalist>
+    </li>
+
+    <li>
+        <div class="종류">
+        영화 장르 : <input type="text" list="what" /><br />
+        <datalist id="what">
+          <option value="첩보"> </option>
+          <option value="재난"> </option>
+          <option value="액션"> </option>
+        </datalist>
+    </li>
+        </ul>
+        <input type="reset" value="리셋" /><br />
+      </div>
+    </form>
+  </body>
+</html>
