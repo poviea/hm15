@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm15 : My Best Music3</title>
+    <style></style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <div>
+      <span id="div" style="font-size: 30px; font-style: bold;">
+        HM15 My Best Music3</span
+      >
+    </div>
+    <hr />
+    나의 최애 노래 3가지 :
+    <select id="site">
+      <option value="https://www.youtube.com/watch?v=AAOyOZ3GeZ0" selected
+        >지코 - 아무노래
+      </option>
+      <option value="https://www.youtube.com/watch?v=vjl_uRTeOfU"
+        >창모 - METEOR
+      </option>
+      <option value="https://www.youtube.com/watch?v=bXBiLAI2qc0"
+        >임재현 - 웃으며
+      </option>
+    </select>
+    <script>
+      var div = document.getElementById("div");
+      var timerID = setInterval("doRotate()", 200);
+      // 200밀리초 주기로 doRotate() 호출
+
+      div.onclick = function (e) {
+        // 마우스 클릭 이벤트 리스너
+        clearInterval(timerID);
+        // 타이머 해제. 문자열 회전 중단
+      };
+      function doRotate() {
+        var str = div.innerHTML;
+        var firstChar = str.substr(0, 1);
+        var remains = str.substr(1, str.length - 1);
+        str = remains + firstChar;
+        div.innerHTML = str;
+      }
+    </script>
+    <p>
+      <button onclick="load()">웹 사이트 접속</button>
+    </p>
+  </body>
+</html>
