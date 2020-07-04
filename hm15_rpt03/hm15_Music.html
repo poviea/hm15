@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>hm15</title>
+    <style>
+      .name {
+        text-align: left;
+      }
+    </style>
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+  <body>
+    <span class="name">
+      <h1>My Faivorite Music3</h1>
+    </span>
+    노래선택 :
+    <select id="site">
+      <option value="https://www.youtube.com/watch?v=bXBiLAI2qc0" selected
+        >임재현 - 웃으며
+      </option>
+      <option value="https://www.youtube.com/watch?v=QIlzgNozXKw"
+        >창모 - 빌었어
+      </option>
+      <option value="https://www.youtube.com/watch?v=Slxqols4jLw"
+        >악뮤 - DINOSAUR
+      </option>
+    </select>
+
+    <p>
+      <button onclick="load()">노래 듣기</button>
+    </p>
+  </body>
+</html>
